@@ -1,0 +1,9 @@
+﻿Admin(id, nom,prenom,email,user_name,password,droit_dacces,date_ajouter_admin,date_annuler_admin);
+User(id,nom,prenom,email,password,image);
+Chambre(id,type_chambre,description,tarif_nuit,disponibilite);
+Article_blog(id,title,date_publication,contenu);
+Restaurant(id,nom,description,menu);
+Commanteur(id,contenu,date_cree,note,#id_chambre,#id_article_blog,#id_restaurant,#id_user);
+Message(#id_user,#id_admin,description,statut,date,but);
+Image_or_vidio(id,chemin_ficher,#id_chambre,#id_article_blog,#id_restaurant);
+Reservation(#id_user,#id_admin,#id_chambre,statut_r,date);
